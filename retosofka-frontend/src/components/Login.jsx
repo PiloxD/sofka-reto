@@ -61,7 +61,7 @@ const Login = () => {
     })
     window.localStorage.setItem('user', username);
     console.log(username);
-    navigate('/Game');
+    navigate('/Gamelvl1');
 
   }
   const userInput = (e) => {

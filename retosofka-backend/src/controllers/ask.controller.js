@@ -25,12 +25,17 @@ module.exports.createAsk = async (req, res) => {
 
 // Este controlador es para requerir una pregunta aleatoria entre la colección de preguntas según la categoría
 module.exports.getAskByCategory = async (req, res) => {
-    Ask.count().exec(function (err, count) {
-        var random = Math.floor(Math.random() * count)
-        const { level } = req.params;
-        Ask.findOne({ category: level }).skip(random).exec(
-            function (err, result) {
-                res.status(200).json(result);
-            })
-    })
+    try {
+        Ask.count().exec(function (err, count) {
+            const random = Math.floor((Math.random() * (4 - 0 + 1)) + 0);
+            console.log("random: ", random)
+            const { level } = req.params;
+            Ask.findOne({ category: level }).skip(random).exec(
+                function (err, result) {
+                    res.status(200).json(result);
+                })
+        })
+    } catch (error) {
+        return res.status(500).json(error);
+    }
 };
