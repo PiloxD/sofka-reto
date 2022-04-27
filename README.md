@@ -10,8 +10,9 @@ Tecnologías usadas: {
 ¿Cómo encender la aplicación?
 
 - Descargar el repositorio de GitHub, está dividido en 2 carpetas "retosofka-backend" y "retosofka-frontend"
-- Entrar en la carpeta de "retosofka-backend" y desde la consola ejecutar el comando npm run server (Esto para correr el servidor de NodeJS)
-- Entrar en la carpeta de "retosofka-frontend" y desde la consola ejecutar el comando npm run start (Esto para correr la aplicación de react)
+-
+- Entrar en la carpeta de "retosofka-backend" y desde la consola ejecutar el comando npm install (Instalar dependencias ) y el comando npm run server (Esto para correr el servidor de NodeJS)
+- Entrar en la carpeta de "retosofka-frontend" y desde la consola ejecutar el comando npm install (Instalar dependencias )  y el comando npm run start (Esto para correr la aplicación de react)
 
 ¿Cómo funciona la aplicación?
 Una vez esté corriendo el programa:
